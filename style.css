@@ -38,6 +38,8 @@ body {
   #proyectos {
     display: flex;
     flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
   }
   
   .proyectos-container {
@@ -63,6 +65,8 @@ body {
   
   footer {
     text-align: center;
+    padding: auto;
+    color: white;
   }  
 
   #c3 {
@@ -71,4 +75,22 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0%;
+  }
+
+  #acerca-de-mi{
+    padding: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align: center;
+  }
+  #conocimientos{
+    text-align: center;
+  }
+  #contacto{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  #footer{
+    background-color: gray;
   }
