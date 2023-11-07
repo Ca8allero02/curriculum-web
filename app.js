@@ -6,7 +6,7 @@ document.getElementById("c3").addEventListener("submit", function(event) {
     let mensaje = document.getElementById("Mensaje").value;
 
     if (email.indexOf("@") === -1) {
-        alert("Por favor ingresa un correo válido. Falta el '@'.");
+        alert("Por favor ingresa un correo válido.");
     } else {
         alert("Los datos guardados son:\nNombre: " + nombre + "\nCorreo: " + email + "\nMensaje: " + mensaje)
     }
