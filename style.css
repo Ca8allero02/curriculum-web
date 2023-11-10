@@ -38,8 +38,7 @@ body {
   #proyectos {
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
-    padding-right: 200px;
+    align-items: center;
   }
   
   .proyectos-container {
@@ -50,7 +49,7 @@ body {
   
   .proyecto {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
   }
   
@@ -94,3 +93,55 @@ body {
   #footer{
     background-color: gray;
   }
+  .btn-whatsapp{
+    position: relative;
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after{
+    content: "";
+    position: absolute;
+    top: 875px;
+    left: 1250px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #00e676;
+    opacity: 0;
+    animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+    animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+    animation-delay: 1.3s;
+}
+
+.btn-whatsapp img{
+    position: relative;
+    z-index: 2;
+}
+@keyframes onda {
+    0%{
+        transform: scale(1);
+    }   
+    
+    15%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+#whats{
+    content: "";
+    position: absolute;
+    top: 875px;
+    left: 1250px;
+    width: 45px;
+    height: 45px;
+}
